@@ -41,21 +41,6 @@ tau = pm.DiscreteUniform("tau", lower=0, upper=n_count_data)
 # Define Functions
 # ----------------------------------------------------------------------------------------------------------------------
 
-def import_data():
-    """
-    Imports data.
-    """
-    
-    # Import Data
-    with open("./dat/txtdata.csv") as f:
-        count_data = f.readlines()
-    
-    count_data = [int(float(i.strip())) for i in count_data]
-    count_data = np.array(count_data)
-    
-    return count_data
-
-
 @pm.deterministic
 def lambda_(tau=tau, lambda_1=lambda_1, lambda_2=lambda_2):
     """
