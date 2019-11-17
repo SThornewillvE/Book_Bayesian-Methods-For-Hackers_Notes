@@ -1,4 +1,4 @@
-# Think-Bayes_Notes
+# Bayesian Methods for Hackers Notes
 
 Author: Simon Thornewill von Essen
 
