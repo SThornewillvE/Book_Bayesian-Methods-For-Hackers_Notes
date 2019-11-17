@@ -131,7 +131,7 @@ def solve_exercises(mcmc):
     
     print("Q: What is the expected percentage increase in text-message rates?")
     
-    print("A: {} \n\n".format((lambda_2_samples/lambda_1_samples).mean()))
+    print("A: {} \n\n".format(((lambda_2_samples-lambda_1_samples)/lambda_1_samples).mean()))
     
     print("Q: What is the mean of λ1 given that we know τ is less than 45?")
     
